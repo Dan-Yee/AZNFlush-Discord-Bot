@@ -42,7 +42,7 @@ async def help(ctx):
     message.add_field(name = "#countdown", value = "triggers a countdown from 3", inline = False)
     message.add_field(name = "#endgame", value = "ends the game session and displays final stats", inline = False)
 
-    await ctx.send(embed = message, delete_after = 20.0)
+    await ctx.send(embed = message)
 
 @bot.command(name = "join")
 async def join(ctx):
